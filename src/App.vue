@@ -1,28 +1,79 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HeaderComponent />
+    <!-- index page -->
+    <HomePageBunner />
+    <HomePageProject />
+    <HomePageCounter />
+    <HomePageBlog />
+    
+    <!-- blog page -->
+    <!-- <BlogPageBunnerComponent /> -->
+    <!-- <BlogPageContentComponent /> -->
+    
+    <!-- article page -->
+    <!-- <ArtilcePageBunnerComponent /> -->
+    <!-- <ArticlePageContentComponent /> -->
+    <FooterComponent />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HeaderComponent from './components/HeaderComponent.vue'
+// index page
+import HomePageBunner from './components/pages/HomePage/HomePageBunner.vue'
+import HomePageProject from './components/pages/HomePage/HomePageProject.vue'
+import HomePageCounter from './components/pages/HomePage/HomePageCounter.vue'
+import HomePageBlog from './components/pages/HomePage/HomePageBlog.vue'
+
+    // blog page
+//  import BlogPageBunnerComponent from './components/pages/BlogPage/BlogPageBunnerComponent.vue'
+//  import BlogPageContentComponent from './components/pages/BlogPage/BlogPageContentComponent.vue'
+
+    // article page
+// import ArtilcePageBunnerComponent from './components/pages/ArticlePage/ArtilcePageBunnerComponent.vue'
+// import ArticlePageContentComponent from './components/pages/ArticlePage/ArticlePageContentComponent.vue'
+import FooterComponent from './components/FooterComponent.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HeaderComponent,
+    // index page
+    HomePageBunner,
+    HomePageProject,
+    HomePageCounter,
+    HomePageBlog,
+    
+    // blog page
+    // BlogPageBunnerComponent,
+    // BlogPageContentComponent,
+    
+    // article page
+    // ArtilcePageBunnerComponent,
+    // ArticlePageContentComponent,
+    FooterComponent
   }
 }
 </script>
 
 <style lang="scss">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  $mainTextColor: #292F36;
+  $arrowButtonBGColor: #F4F0EC;
+  $counterNumberColor: #CDA274;
+  $blogBorderColor: #E7E7E7;
+  $blogHintTextColor: #4D5053;
+  $blogHintColor: white;
+  $widthSiteDesctop: 1200px;
+
+  a {
+      text-decoration: none;
+  }
+
+  .center {
+        padding-left: calc(50% - $widthSiteDesctop / 2);
+        padding-right: calc(50% - $widthSiteDesctop / 2);
+    }
 }
 </style>
