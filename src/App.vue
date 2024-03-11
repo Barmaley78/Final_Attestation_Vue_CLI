@@ -6,6 +6,7 @@
     <HomePageProject />
     <HomePageCounter />
     <HomePageBlog />
+    <ProductDetails />
     
     <!-- blog page -->
     <!-- <BlogPageBunnerComponent /> -->
@@ -25,6 +26,7 @@ import HomePageBunner from './components/pages/HomePage/HomePageBunner.vue'
 import HomePageProject from './components/pages/HomePage/HomePageProject.vue'
 import HomePageCounter from './components/pages/HomePage/HomePageCounter.vue'
 import HomePageBlog from './components/pages/HomePage/HomePageBlog.vue'
+import ProductDetails from './components/ProductDetails.vue'
 
     // blog page
 //  import BlogPageBunnerComponent from './components/pages/BlogPage/BlogPageBunnerComponent.vue'
@@ -44,6 +46,7 @@ export default {
     HomePageProject,
     HomePageCounter,
     HomePageBlog,
+    ProductDetails,
     
     // blog page
     // BlogPageBunnerComponent,
