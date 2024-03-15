@@ -59,17 +59,17 @@
          contentsArticles: [
             {
                title: "Let’s Get Solution for Building Construction Work",
-               img: "../../../assets/images/bd1.jpg",
+               img: "bd1.jpg",
                tag: "Kitchen"
             },
             {
                title: "Low Cost Latest Invented Interior Designing Ideas.",
-               img: "../../../assets/images/bd1.jpg",
+               img: "bd1.jpg",
                tag: "Bedroom"
             },
             {
                title: "Best For Any Office & Business Interior Solution",
-               img: "../../../assets/images/bd1.jpg",
+               img: "bd1.jpg",
                tag: "Building"
             },
          ],
