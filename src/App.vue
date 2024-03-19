@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <ProjectPage />
+    <ProjectDetails />
+    <!-- <ProjectPage /> -->
     <!-- <HomePage /> -->
     <!-- <BlogPage /> -->
     <!-- <ArticlePage /> -->
@@ -8,7 +9,8 @@
 </template>
 
 <script>
-import ProjectPage from './pages/ProjectPage.vue'
+import ProjectDetails from './pages/ProjectDetails.vue'
+// import ProjectPage from './pages/ProjectPage.vue'
 // import HomePage from './pages/HomePage.vue'
 // import BlogPage from './pages/BlogPage.vue'
 // import ArticlePage from './pages/ArticlePage.vue'
@@ -16,7 +18,8 @@ import ProjectPage from './pages/ProjectPage.vue'
 export default {
   name: 'App',
   components: {
-    ProjectPage,
+    ProjectDetails,
+    // ProjectPage,
     // HomePage,
     // BlogPage,
     // ArticlePage
