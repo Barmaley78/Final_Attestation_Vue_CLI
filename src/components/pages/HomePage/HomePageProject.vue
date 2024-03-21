@@ -12,9 +12,9 @@
                         <h5 class="project__contentItem__header">Modern Kitchan</h5>
                         <p class="project__contentItem__descText">Decor / Artchitecture</p>
                     </div>
-                    <div class="project__contentItem__button">
+                    <router-link class="project__contentItem__button" to="/project">
                         <img src="../../../assets/images/button_vector.svg" alt="button arrow">
-                    </div>
+                    </router-link>
                 </div>
             </div>
             <div class="project__contentItem">
@@ -24,9 +24,9 @@
                         <h5 class="project__contentItem__header">Modern Kitchan</h5>
                         <p class="project__contentItem__descText">Decor / Artchitecture</p>
                     </div>
-                    <div class="project__contentItem__button">
+                    <router-link class="project__contentItem__button" to="/project">
                         <img src="../../../assets/images/button_vector.svg" alt="button arrow">
-                    </div>
+                    </router-link>
                 </div>
             </div>
             <div class="project__contentItem">
@@ -36,9 +36,9 @@
                         <h5 class="project__contentItem__header">Modern Kitchan</h5>
                         <p class="project__contentItem__descText">Decor / Artchitecture</p>
                     </div>
-                    <div class="project__contentItem__button">
+                    <router-link class="project__contentItem__button" to="/project">
                         <img src="../../../assets/images/button_vector.svg" alt="button arrow">
-                    </div>
+                    </router-link>                    
                 </div>
             </div>
             <div class="project__contentItem">
@@ -48,9 +48,9 @@
                         <h5 class="project__contentItem__header">Modern Kitchan</h5>
                         <p class="project__contentItem__descText">Decor / Artchitecture</p>
                     </div>
-                    <div class="project__contentItem__button">
+                    <router-link class="project__contentItem__button" to="/project">
                         <img src="../../../assets/images/button_vector.svg" alt="button arrow">
-                    </div>
+                    </router-link>                    
                 </div>
             </div>
         </div>

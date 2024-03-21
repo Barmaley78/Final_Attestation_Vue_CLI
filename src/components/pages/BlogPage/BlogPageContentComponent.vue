@@ -10,9 +10,9 @@
                     <p class="postText">Lorem Ipsum is not simply random text. It has roots in a piece of classica.</p>
                     <div class="postFooter">
                         <div class="blog__item__attrText">26 December,2022</div>
-                        <div class="blog__item__attrButton">
+                        <router-link  to="/blog-details" class="blog__item__attrButton">
                             <img src="../../../assets/images/button_vector.svg" alt="button arrow">
-                        </div>
+                        </router-link>
                     </div>
                 </div>
             </div>
@@ -22,34 +22,34 @@
             <div class="blog__content">
                 <div v-for="blog in blogs" :key="blog.id" @click="relocate" class="blog__item">
                     <div class="blog__itemImage">
-                        <img class="blog__itemImage__image" v-bind:src="blog.image" alt="">
+                        <img class="blog__itemImage__image" v-bind:src="require('../../../assets/images/' + blog.image)" alt="">
                         <div class="blog__itemImage__decoration">{{ blog.buttonText }}</div>
                     </div>
                     <div class="blog__item__content">
                     <h3 class="blog__item__heading">{{ blog.headingText }}</h3>
                     <div class="blog__item__attributes">
                         <div class="blog__item__attrText">{{ blog.descriptionText }}</div>
-                        <div id="button" class="blog__item__attrButton">
+                        <router-link to="/blog-details" id="button" class="blog__item__attrButton">
                             <img src="../../../assets/images/button_vector.svg" alt="button arrow">
-                        </div>
+                        </router-link>
                     </div>
                 </div>
                 </div>
             </div>
             <div class="aligning">
                 <div class="news__pages">
-                    <div id="selected" class="blog__item__attrButton-inv">
+                    <router-link to="/blog" id="selected" class="blog__item__attrButton-inv">
                         <p class="caruselText">01</p>
-                    </div>
-                    <div class="blog__item__attrButton-inv">
+                    </router-link>
+                    <router-link to="/blog" class="blog__item__attrButton-inv">
                         <p class="caruselText">02</p>
-                    </div>
-                    <div class="blog__item__attrButton-inv">
+                    </router-link>
+                    <router-link to="/blog" class="blog__item__attrButton-inv">
                         <p class="caruselText">03</p>
-                    </div>
-                    <div class="blog__item__attrButton-inv">
+                    </router-link>
+                    <router-link to="/blog" class="blog__item__attrButton-inv">
                         <img src="../../../assets/images/button_vector.svg" alt="button arrow">
-                    </div>
+                    </router-link>
                 </div>
             </div>
         </div>

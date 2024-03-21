@@ -1,30 +1,14 @@
 <template>
   <div id="app">
-    <ProjectDetails />
-    <!-- <ProjectPage /> -->
-    <!-- <HomePage /> -->
-    <!-- <BlogPage /> -->
-    <!-- <ArticlePage /> -->
+      <router-view />
   </div>
 </template>
 
 <script>
-import ProjectDetails from './pages/ProjectDetails.vue'
-// import ProjectPage from './pages/ProjectPage.vue'
-// import HomePage from './pages/HomePage.vue'
-// import BlogPage from './pages/BlogPage.vue'
-// import ArticlePage from './pages/ArticlePage.vue'
-
-export default {
-  name: 'App',
-  components: {
-    ProjectDetails,
-    // ProjectPage,
-    // HomePage,
-    // BlogPage,
-    // ArticlePage
-  }
-}
+    export default {
+        name: 'App',
+        components: {}
+    }
 </script>
 
 <style lang="scss">

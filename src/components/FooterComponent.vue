@@ -17,9 +17,9 @@
                 <h5>Pages</h5>
             </div>
             <div class="footer__item__content">
-                <p class="footer__item__text"><a class="footer__link" href="#">Home</a></p>
-                <p class="footer__item__text"><a class="footer__link" href="#">Project</a></p>
-                <p class="footer__item__text"><a class="footer__link" href="blog.html">Blog</a></p>
+                <p class="footer__item__text"><router-link class="footer__link" to="/">Home</router-link></p>
+                <p class="footer__item__text"><router-link class="footer__link" to="/Project">Progect</router-link></p>
+                <p class="footer__item__text"><router-link class="footer__link" to="/Blog">Blog</router-link></p>
             </div>
         </div>
 
