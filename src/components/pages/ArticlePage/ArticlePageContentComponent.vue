@@ -41,7 +41,7 @@
          <div class="tags__buttons-wrap">
             <h2 class="tags__title">Tags</h2>
             <div class="tags__buttons">
-               <span v-for="btn in buttonList" :key="btn.id" @click="filterClick(btn.name)" class="tags__buttons-item">{{ btn.name }}</span>
+               <span v-for="(btn, num) in buttonList" :value="btn.id" :key="num" @click="filterClick(btn)" class="tags__buttons-item">{{ btn.name }}</span>
             </div>
          </div>
       </div>
@@ -54,8 +54,33 @@
     name: 'ArticlePageContentComponent',
     data() {
       return {
-         findelement: '',
-         selectedTag: '',
+         buttonList: [
+            {
+               name: "Kitchen",
+               id: 0
+            },
+            {
+               name: "Bedroom",
+               id: 1
+            },
+            {
+               name: "Building",
+               id: 2
+            },
+            {
+               name: "Architecture",
+               id: 3
+            },
+            {
+               name: "Kitchen Planning",
+               id: 4
+            },
+            {
+               name: "Bedroom",
+               id: 5
+            }
+         ],
+         findelement: 'Kitchen',
          contentsArticles: [
             {
                title: "Let’s Get Solution for Building Construction Work",
@@ -71,53 +96,24 @@
                title: "Best For Any Office & Business Interior Solution",
                img: "bd1.jpg",
                tag: "Building"
-            },
-         ],
-         buttonList: [
-            {
-                id: 1,
-                name: "Kitchen"
-            },
-            {
-                id: 2,
-                name: "Bedroom"
-            },
-            {
-                id: 3,
-                name: "Building"
-            },
-            {
-                id: 4,
-                name: "Architecture"
-            },
-            {
-                id: 5,
-                name: "Kitchen Planning"
-            },
-            {
-                id: 6,
-                name: "Bedroom"
             }
          ]
       }
    },
    methods: {
       filterClick(item) {
-        for (const span of document.querySelectorAll('.tags__buttons-item')) {
-            span.removeAttribute('id');
-        }
-         this.findelement = item;
-         for (const span of document.querySelectorAll('.tags__buttons-item')) {
-            if (span.textContent === this.findelement) {
-               span.id = 'tag-selected';
-            }
-            
+         const selectedButton = document.getElementById('tag-selected');
+         if (selectedButton !== null) {
+            selectedButton.id = '';
          }
+         this.findelement = item;
+         const newButtonSelection = document.querySelector('[value="' +item.id + '"]');
+         newButtonSelection.id ='tag-selected';
       }
    },
    computed: {
       filterArticle() {
-         return this.findelement ? this.contentsArticles.filter((el) => el.tag.includes(this.findelement)) :
+         return this.findelement.name ? this.contentsArticles.filter((el) => el.tag.includes(this.findelement.name)) :
             this.contentsArticles
       }
    },
@@ -232,7 +228,7 @@
          color: $mainTextColor;
          &#tag-selected {
             background-color: $mainTextColor;
-        color: $blogHintColor;
+            color: $blogHintColor;
         }
       }
    }
@@ -249,6 +245,8 @@
    align-items: center;
    gap: 10px;
    &__quotation-marks {
+      margin-top: 0px;
+      margin-bottom: 0px;
       width: 106px;
       height: 133px;
       flex-shrink: 0;
