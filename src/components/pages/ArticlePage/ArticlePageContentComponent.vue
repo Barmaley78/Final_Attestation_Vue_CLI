@@ -80,7 +80,7 @@
                id: 5
             }
          ],
-         findelement: 'Kitchen',
+         findelement: '',
          contentsArticles: [
             {
                title: "Let’s Get Solution for Building Construction Work",
